@@ -56,9 +56,9 @@ which pip
 这里选择的是这个版本，如果你的jetpack版本较老，可自行前往[官网](https://www.paddlepaddle.org.cn/inference/master/guides/introduction/index_intro.html)寻找合适的版本  
 下面是快捷安装指令
 ```
-wget https://paddle-inference-lib.bj.bcebos.com/2.6.0/python/Jetson/jetpack5.1.1_gcc9.4/all/paddlepaddle_gpu-2.6.0-cp38-cp38-linux_aarch64.whl -O paddlepaddle_gpu-2.6.whl
-pip install paddlepaddle_gpu-2.6.whl
-rm -rf paddlepaddle_gpu-2.6.whl
+wget https://paddle-inference-lib.bj.bcebos.com/2.6.0/python/Jetson/jetpack5.1.1_gcc9.4/all/paddlepaddle_gpu-2.6.0-cp38-cp38-linux_aarch64.whl
+pip install paddlepaddle_gpu-2.6.0-cp38-cp38-linux_aarch64.whl
+rm -rf paddlepaddle_gpu-2.6.0-cp38-cp38-linux_aarch64.whl
 ```
 你可以简单地通过`import paddle`来检查是否安装成功
 ### PaddleOCR
@@ -97,7 +97,7 @@ def get_result(image:str)->str:
         text += i[1][0]+'\n'
     return text
 
-#设置图标路径，这里建议使用绝对路径
+#设置预测图片路径，这里建议使用绝对路径
 img="/home/nano/code/ocr/test/1.jpg"
 
 print(get_result(img))
