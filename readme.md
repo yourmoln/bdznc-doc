@@ -73,6 +73,7 @@ pip install "paddleocr>=2.0.1" # 推荐使用2.0.1+版本
 ![文件结构](photo/file.png)
 
 model里存放用来预测的rec模型，这里推荐
+
 |模型名称|模型简介|推理模型大小|下载地址|
 | --- | --- | --- | --- |
 |ch_PP-OCRv4_server_rec|【最新】高精度模型，支持中英文、数字识别| 88M |[推理模型](https://paddleocr.bj.bcebos.com/PP-OCRv4/chinese/ch_PP-OCRv4_rec_server_infer.tar) |
